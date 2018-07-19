@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="scripts.js"></script>
+  </head>
+  <body>
+  <h1>BOOTSTRAP CALCULATOR</h1>
+<div class="container">
+  <div class="calculator">
+    <div class="phone-element"></div>
+    <div class="phone-screen">
+    <div class="row">
+        <div class="col-sm-4">
+          <form name="calc">
+            <div class= "phone-icons">
+               <i class="fas fa-wifi"></i><i class="fas fa-battery-three-quarters"></i>
+            </div>
+          <input type="text" class="calc-screen text-right" name="result" readonly>
+          </form>
+      </div>
+    </div>
+    <div class="row">
+         <div class="btn-group btn-group-lg">
+            <button type="button" class="btn btn-primary number" id="7" onclick="myFunction(this.id)">7</button>
+            <button type="button" class="btn btn-primary number" id="8" onclick="myFunction(this.id)">8</button>
+            <button type="button" class="btn btn-primary number" id="9" onclick="myFunction(this.id)">9</button>
+            <button type="button" class="btn btn-primary operator" id="/" onclick="myFunction(this.id)"><i class="fas fa-divide fa-xs"></i>
+
+</button> 
+          </div>
+    </div>
+    <div class="row">
+        <div class="btn-group btn-group-lg">
+            <button type="button" class="btn btn-primary number" id="4" onclick="myFunction(this.id)">4</button>
+            <button type="button" class="btn btn-primary number" id="5" onclick="myFunction(this.id)">5</button>
+            <button type="button" class="btn btn-primary number" id="6" onclick="myFunction(this.id)">6</button>
+            <button type="button" class="btn btn-primary operator" id="*" onclick="myFunction(this.id)"><i class="fas fa-times fa-xs"></i>
+
+</button> 
+          </div>
+    </div>
+    <div class="row">
+         <div class="btn-group btn-group-lg">
+            <button type="button" class="btn btn-primary number" id="1" onclick="myFunction(this.id)">1</button>
+            <button type="button" class="btn btn-primary number" id="2" onclick="myFunction(this.id)">2</button>
+            <button type="button" class="btn btn-primary number" id="3" onclick="myFunction(this.id)">3</button>
+            <button type="button" class="btn btn-primary operator" id="-" onclick="myFunction(this.id)"><i class="fas fa-minus fa-xs"></i>
+
+</button> 
+          </div>
+    </div>
+    <div class="row">
+        <button type="button" class="btn btn-primary number" id="0" onclick="myFunction(this.id)">0</button>
+        <button type="button" class="btn btn-primary number" id="00" onclick="myFunction(this.id)">00</button>
+        <button type="button" class="btn btn-primary number" id="." onclick="myFunction(this.id)">,</button>
+       <button type="button" class="btn btn-primary operator" id="+" onclick="myFunction(this.id)"><i class="fas fa-plus fa-xs"></i>
+
+</button>
+    </div>
+    <div class="row">
+      <button type="button" class="btn btn-primary operator2" id="equal" onclick="calculate()"><i class="fas fa-equals"></i>
+
+</button>
+  </div>
+  <div class="row">
+      <button type="button" class="btn btn-primary operator2" id="clear" onclick="clearAll()">C</button>
+    
+  </div>
+      
+</div>
+    <div class="phone-element2"></div>
+  </div>
+    </div>
+  </body>
+</html>
